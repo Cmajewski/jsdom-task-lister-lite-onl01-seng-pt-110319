@@ -6,4 +6,7 @@ let tasks=document.getElementById("tasks")
 taskForm.addEventListner("submit",function(event){
   event.preventDefault();
   const newTask=document.getElementById("new-task-description").value
+  let task=document.createElement("li")
+  task.innerText=newTask
+  tasks.appendChild(task)
 })

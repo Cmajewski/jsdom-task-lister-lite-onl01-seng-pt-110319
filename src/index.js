@@ -1,7 +1,7 @@
 
   // your code here
-let submit=document.getElementByID("submit")
-let search=document.getElementByID("new-task-description").value
+let taskForm=document.querySelector("form")
+let submit=document.getElementById("submit")
 
 submit.addEventListener("click",function(e){
   event.preventDefault();
